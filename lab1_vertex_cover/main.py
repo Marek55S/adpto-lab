@@ -2,6 +2,7 @@ import time
 import os
 
 from vertex_cover.brute_force import brute_force
+from vertex_cover.recursive_v1 import recursive_v1
 from vertex_cover.types import EdgeList, VertexSets
 from utils.dimacs import *
 
@@ -62,7 +63,8 @@ if __name__ == "__main__":
             # graph_kernel, k, solution = kernelize(...)
 
             # TODO: implement solutions
-            solution = brute_force(len(G),G_edge_list, k)
+            # solution = brute_force(len(G),G_edge_list, k)
+            solution = recursive_v1(len(G), G_edge_list, k, set())
 
             if not solution:
                 continue
