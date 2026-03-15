@@ -1,4 +1,48 @@
-.idea/
+# Ignore Python virtual environments
+.venv/
+
+# Ignore Python cache files
+*.pyc
+*.pyo
+*.pyd
 __pycache__/
 
+# Ignore IDE/editor configurations
+.idea/
+*.vscode/
+
+# Ignore lock files
 *.lock
+
+# Ignore solution files
+*.sol
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Ignore test reports and coverage files
+.coverage
+*.cover
+*.cov
+*.lcov
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
+*.eggs/
+*.manifest
+*.spec
+
+# Ignore environment-specific files
+.env
+.env.*
+.python-version
