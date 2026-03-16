@@ -5,9 +5,6 @@ from lab1_vertex_cover.vertex_cover.types import VertexSets, EdgeList
 
 def recursive_v1(num_vertices: int, edge_list: EdgeList, k: int, selected: set[int]) -> Optional[set[int]]:
 
-    if k== 0:
-        return None
-    
     new_edge = None
 
     while edge_list:
