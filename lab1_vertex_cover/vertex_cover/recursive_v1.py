@@ -2,7 +2,6 @@
 
 from typing import Optional
 from lab1_vertex_cover.vertex_cover.types import VertexSets, EdgeList
-from lab1_vertex_cover.utils.dimacs import isVC
 
 def recursive_v1(num_vertices: int, edge_list: EdgeList, k: int, selected: set[int]) -> Optional[set[int]]:
 
