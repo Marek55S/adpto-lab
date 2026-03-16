@@ -12,8 +12,8 @@ graph_names = [
     "e20",
     "e40",
     # "e150",
-    # "s25",
-    # "s50",
+    "s25",
+    "s50",
     # "s500",
     "b20",
     "b30",
@@ -62,8 +62,8 @@ if __name__ == "__main__":
         # graph_kernel, k, solution = kernelize(...)
 
         # TODO: implement solutions
-        solution = two_approx(G_edge_list)
-        # solution = logn_approx(G_edge_list)
+        # solution = two_approx(G_edge_list)
+        solution = logn_approx(G_edge_list)
 
         if not solution:
             continue
